@@ -5,7 +5,7 @@ import Image from "next/image";
 // The page for each post
 export default async function Post({ params }: { params: { slug: string } }) {
   const response = await fetch(
-    `http://127.0.0.1:3000/api/post?slug=${params.slug}`,
+    `${process.env.API_URL}/api/post?slug=${params.slug}`,
     {
       method: "GET",
     }
