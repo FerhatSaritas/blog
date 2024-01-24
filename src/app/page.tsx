@@ -4,7 +4,7 @@ import { Post } from "./_constants";
 
 // The Blog Page Content
 export default async function Blog() {
-  const response = await fetch("http://localhost:3000/api/blog");
+  const response = await fetch("http://127.0.0.1:3000/api/blog");
   const { posts } = await response.json();
 
   return (
