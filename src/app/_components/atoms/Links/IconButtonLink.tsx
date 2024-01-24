@@ -1,5 +1,5 @@
-import { ButtonLinkProps } from "@app/_constants";
 import Link from "next/link";
+import { ButtonLinkProps } from "../../../_constants";
 
 export const IconButtonLink = ({ icon, href }: ButtonLinkProps) => (
   <Link

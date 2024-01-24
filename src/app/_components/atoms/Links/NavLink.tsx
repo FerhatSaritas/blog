@@ -1,7 +1,7 @@
-import { NavLinkProps } from "@app/_constants";
 import classNames from "classnames";
 import Link from "next/link";
 import { PropsWithChildren } from "react";
+import { NavLinkProps } from "../../../_constants";
 
 export const NavLink = ({
   children,

@@ -1,5 +1,3 @@
-import { LoadingComponent } from "@app/_components/atoms";
-
 export const Loading = () => {
   return (
     <div className='flex flex-col gap-4 w-52'>
