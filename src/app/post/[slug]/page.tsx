@@ -4,12 +4,9 @@ import { Badge, Divider, PageTransitionWrapper } from "../../_components/atoms";
 import Image from "next/image";
 // The page for each post
 export default async function Post({ params }: { params: { slug: string } }) {
-  const response = await fetch(
-    `${process.env.API_URL}/api/post?slug=${params.slug}`,
-    {
-      method: "GET",
-    }
-  );
+  const response = await fetch(`/api/post?slug=${params.slug}`, {
+    method: "GET",
+  });
   const { post } = await response.json();
   const { frontmatter, content } = post;
   const { title, category, date, bannerImage, tags } = frontmatter;
