@@ -13,7 +13,7 @@ export default function RootLayout({
       <body>
         <Header />
         <div className='flex flex-row w-full'>
-          <div className='container py-4 min-h-screen'>{children}</div>
+          <div className='container py-4 min-h-screen'>{ children }</div>
         </div>
         <Analytics />
         <Footer />
